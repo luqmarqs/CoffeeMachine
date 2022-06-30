@@ -1,7 +1,7 @@
 // Use "input()" to input a line from the user
 // Use "input(str)" to print some text before requesting input
 // You will need this in the following stages
-const input = require('sync-input')
+const input = require('sync-input');
 
 //suprimentos
 
@@ -51,7 +51,7 @@ function printSupply(){
 
 
 function buy() {
-    let product = input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:")
+    let product = input("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:");
     switch(product){
         case '1':
             missing = testeSupply(250, 0 , 16);
@@ -61,9 +61,9 @@ function buy() {
                 coffee = coffee - 16;
                 money = money + 4;
                 cups--;
-                console.log("I have enough resources, making you a coffee!")
+                console.log("I have enough resources, making you a coffee!");
             } else {
-                console.log(`Sorry, not enough ${missing}!`)
+                console.log(`Sorry, not enough ${missing}!`);
             }
             
             break;
@@ -77,9 +77,9 @@ function buy() {
                 coffee = coffee - 20;
                 money = money + 7;
                 cups--;
-                console.log("I have enough resources, making you a coffee!")
+                console.log("I have enough resources, making you a coffee!");
             } else {
-                console.log(`Sorry, not enough ${missing}!`)
+                console.log(`Sorry, not enough ${missing}!`);
             }
             
             break;
@@ -93,9 +93,9 @@ function buy() {
                 coffee = coffee - 12;
                 money = money + 6;
                 cups--;
-                console.log("I have enough resources, making you a coffee!")
+                console.log("I have enough resources, making you a coffee!");
             } else {
-                console.log(`Sorry, not enough ${missing}!`)
+                console.log(`Sorry, not enough ${missing}!`);
             }
             
             break;
